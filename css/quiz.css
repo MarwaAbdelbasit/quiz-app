@@ -1,0 +1,165 @@
+/* colors */
+:root {
+  --light-color: #f4f6ff;
+  --dark-color: #45046a;
+}
+
+/* padding */
+:root {
+  --padding-20: 20px;
+  --padding-10: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'B612', sans-serif;
+}
+
+.quiz-app {
+  padding: var(--padding-20);
+  margin: 0 auto;
+  width: 800px;
+}
+
+.anmi img {
+  float: right;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+}
+
+.quiz-info {
+  display: flex;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.quiz-info .category {
+  flex: 1;
+}
+
+.quiz-info .count {
+  float: right;
+}
+
+.quiz-area {
+  background-image: linear-gradient(to right, #006a71, #19787F, #006a71);
+  background-size: 200%;
+  color: #fff;
+  box-shadow: 0 4px 25px rgb(0 150 136 / 60%);
+  border-radius: 25px;
+  margin-bottom: 20px;
+}
+
+.quiz-area h2 {
+  padding: 10px 20px 10px 20px;
+}
+
+.answer-area .answer {
+  background-image: linear-gradient(to right, #24a19c, #39aaa5, #24a19c);
+  /*background-color: #24a19c;*/
+  margin-bottom: 10px;
+  padding: var(--padding-10);
+  border-left: 5px solid #ffd36b;
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  padding-bottom: 0;
+}
+
+.answer-area .answer input[type="radio"] {
+  margin-right: 10px;
+}
+
+.answer-area .answer input[type="radio"]:checked + label {
+  color: #ffd36b;
+}
+
+.submit {
+  border: none;
+  background-image: linear-gradient(to right, #e06265, #f86d70, #e06265);
+  border-radius: 5px;
+  padding: 15px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  width: 100%;
+}
+
+.submit:focus {
+  outline: none;
+}
+
+.submit:hover {
+  background-position: right;
+}
+
+.countdown {
+  margin-top: 10px
+}
+
+.countdown .minutes,
+.countdown .seconds {
+  padding: 5px;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.countdown .minutes {
+  background-color: #f86d70;
+}
+
+.countdown .seconds {
+  background-color: #ffd36b;
+}
+
+.bullets {
+  display: flex;
+  padding: 20px;
+}
+
+.bullets .spans {
+  flex: 1;
+  display: flex;
+}
+
+.bullets .spans span {
+  background-color: #e7f1f1;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.bullets .spans span.on {
+  background-color: #ffd36b;
+}
+
+.result {
+  padding: 20px;
+  background-color: #e7f1f1;
+}
+
+.result span {
+  font-weight: bold;
+}
+
+.result span.perfect {
+  color: #25a19c;
+}
+
+.result span.good {
+  color: #ffd36b;
+}
+
+.result span.bad {
+  color: #f86d70;
+}
