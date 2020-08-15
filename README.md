@@ -1,4 +1,10 @@
 # quiz-app
+
+/* App description */
+
+ a simple quiz app containing ten questions and each question has a time limit of 60 seconds
+
+
 /* To run the app correctly */																																						
 
 1 - you need to install atom-live-srver package on atom IDE and make sure the package is enabled
